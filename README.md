@@ -21,6 +21,8 @@ git clone https://github.com/yeshsrirepo/fram-collector.git
 cd farm-collector
 Build the Project
 
+**Documentation** : Swagger URL http://localhost:8080/swagger-ui/index.html
+
 bash
 Copy code
 ./gradlew clean build
