@@ -38,6 +38,7 @@ Method: POST
 Request Body:
 json
 Copy code
+```
 {
   "farm": "MyFarm",
   "crop": "Potato",
@@ -57,7 +58,7 @@ Copy code
   "expectedProduct": 100,
   "actualHarvestedProduct": 0
 }
-2. Record Harvested Data
+3. Record Harvested Data
 URL: /api/production/harvested
 Method: POST
 Request Body:
@@ -87,7 +88,7 @@ Copy code
 {
   "error": "Farm does not exist: MyFarm"
 }
-3. Get Report
+4. Get Report
 URL: /api/production/reports
 Method: GET
 Query Parameters:
@@ -115,6 +116,7 @@ Copy code
     }
   ]
 }
+```
 Testing the Application
 Run Unit and Integration Tests
 
