@@ -116,6 +116,31 @@ Copy code
     }
   ]
 }
+
+GET /api/production/reports?season=spring&groupBy=crop
+Response (Grouped by Crop):
+json
+Copy code
+{
+    "potato": [
+        {
+            "id": 1,
+            "farm": {
+                "id": 1,
+                "name": "myform"
+            },
+            "crop": {
+                "id": 1,
+                "name": "potato",
+                "season": "spring"
+            },
+            "season": "spring",
+            "plantingArea": 100.5,
+            "expectedProduct": 100.0,
+            "actualHarvestedProduct": 99.0
+        }
+    ]
+}
 ```
 Testing the Application
 Run Unit and Integration Tests
