@@ -11,24 +11,24 @@ H2 Database - In-memory database for local development.
 JUnit & Mockito - Testing frameworks for unit and integration tests.
 Prerequisites
 Java 17 or higher
-Maven (optional, as Maven Wrapper is included)
+Gradle (optional, as Gradle Wrapper is included)
 Getting Started
 Clone the Repository
 
 bash
 Copy code
-git clone https://github.com/your-username/farm-collector.git
+git clone https://github.com/yeshsrirepo/fram-collector.git
 cd farm-collector
 Build the Project
 
 bash
 Copy code
-./mvnw clean install
+./gradlew clean build
 Run the Application
 
 bash
 Copy code
-./mvnw spring-boot:run
+./gradlew bootRun
 The application will start on http://localhost:8080.
 
 API Endpoints
@@ -120,7 +120,7 @@ Run Unit and Integration Tests
 
 bash
 Copy code
-./mvnw test
+./gradlew test
 Test API Endpoints Using Postman or Curl
 
 You can test the endpoints listed above by sending HTTP requests using Postman, Curl, or similar tools.
@@ -162,6 +162,10 @@ This application uses an in-memory H2 database for testing and development purpo
 To view the database:
 
 Go to http://localhost:8080/h2-console in your browser.
+Use the following credentials:
+JDBC URL: jdbc:h2:mem:testdb
+Username: sa
+Password: (leave blank)
 Use the following credentials:
 JDBC URL: jdbc:h2:mem:testdb
 Username: sa
