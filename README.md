@@ -132,6 +132,7 @@ Record Planted Data:
 
 bash
 Copy code
+```
 curl -X POST http://localhost:8080/api/production/planted \
   -H "Content-Type: application/json" \
   -d '{
@@ -141,10 +142,12 @@ curl -X POST http://localhost:8080/api/production/planted \
         "plantingArea": 50.5,
         "expectedProduct": 100
       }'
+```
 Record Harvested Data:
 
 bash
 Copy code
+```
 curl -X POST http://localhost:8080/api/production/harvested \
   -H "Content-Type: application/json" \
   -d '{
@@ -153,11 +156,14 @@ curl -X POST http://localhost:8080/api/production/harvested \
         "season": "Spring",
         "actualHarvestedProduct": 99
       }'
+```
 Get Report:
 
 bash
 Copy code
+```
 curl -X GET "http://localhost:8080/api/production/reports?season=spring&groupBy=farm"
+```
 Database
 This application uses an in-memory H2 database for testing and development purposes. The database will reset each time the application restarts.
 
