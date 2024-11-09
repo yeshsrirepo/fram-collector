@@ -21,9 +21,22 @@ git clone https://github.com/yeshsrirepo/fram-collector.git
 cd farm-collector
 Build the Project
 
-**Documentation** : Swagger URL http://localhost:8080/swagger-ui/index.html
+### Documentation
+**Swagger URL** http://localhost:8080/swagger-ui/index.html
 
-bash
+### Build and Run with Docker
+
+1. **Build the Docker Image**
+
+   Run the following command to build the Docker image for this project:
+
+   ```bash
+   docker build -t farm-collector-app .
+
+   docker run -p 8080:8080 farm-collector-app
+
+### Build and Run locally in IDE
+```bash
 Copy code
 ./gradlew clean build
 Run the Application
